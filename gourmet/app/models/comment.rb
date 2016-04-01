@@ -1,5 +1,5 @@
 class Comment < ActiveRecord::Base
-	belongs_to :users
-	belongs_to :posts
+	belongs_to :user
+	belongs_to :post
 	validates :content, :presence => { :message => "내용을 반드시 입력하여야 합니다." }
 end
